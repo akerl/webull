@@ -6,6 +6,8 @@ webull
 
 Access the unofficial [Webull](https://webull.com) API to view data about your account.
 
+The API information is derived from [@tedchou12's Python Webull module](https://github.com/tedchou12/webull/).
+
 ## Usage
 
 ## Installation
