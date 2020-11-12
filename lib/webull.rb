@@ -1,17 +1,20 @@
 ##
-# This module provides a simple interface to GitHub's release assets
+# This module provides an interface to Webull's API
 module Targit
   class << self
     ##
-    # Insert a helper .new() method for creating a new Cache object
+    # Insert a helper .new() method for creating a new Account
 
     def new(*args)
-      self::Asset.new(*args)
+      self::Account.new(*args)
+    end
+
+    def generate_tokens
+      self::Authenticator.new.generate_tokens
     end
   end
 end
 
-require 'targit/version'
-require 'targit/client'
-require 'targit/asset'
-require 'targit/release'
+require 'webull/version'
+require 'webull/account'
+require 'webull/authenticator'
