@@ -33,10 +33,7 @@ module Webull
     def orders(params = {})
       HTTParty.get(
         'https://tradeapi.webullbroker.com/api/trade/v2/option/list',
-        query: {
-          secAccountId: account_id,
-          status: 'Filled'
-        }.merge(params),
+        query: { secAccountId: account_id }.merge(params),
         headers: headers
       )
     end
