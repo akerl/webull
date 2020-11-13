@@ -1,6 +1,6 @@
 ##
 # This module provides an interface to Webull's API
-module Targit
+module Webull
   class << self
     ##
     # Insert a helper .new() method for creating a new Account
@@ -9,8 +9,8 @@ module Targit
       self::Account.new(*args)
     end
 
-    def generate_tokens
-      self::Authenticator.new.generate_tokens
+    def generate_tokens(*args)
+      self::Authenticator.new(*args).generate_tokens
     end
   end
 end
