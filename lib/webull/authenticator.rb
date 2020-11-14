@@ -89,7 +89,7 @@ module Webull
     end
 
     def hashed_password
-      @hashed_password ||= Digest::MD5.hexdigest('wl_app-a&b@!423^' + password)
+      @hashed_password ||= Digest::MD5.hexdigest("wl_app-a&b@!423^#{password}")
     end
   end
 end

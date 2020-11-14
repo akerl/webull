@@ -13,6 +13,7 @@ Gem::Specification.new do |s|
   s.email       = 'me@lesaker.org'
   s.homepage    = 'https://github.com/akerl/webull'
   s.license     = 'MIT'
+  s.required_ruby_version = '>= 2.6.0'
 
   s.files       = `git ls-files`.split
   s.test_files  = `git ls-files spec/*`.split
